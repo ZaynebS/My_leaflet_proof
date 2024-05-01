@@ -45,19 +45,32 @@ tag.Ailanthus.Altissima.in.Tunisia<- tags$style(HTML("
 
 
 title <- tags$div(
+
     tag.Ailanthus.Altissima.in.Tunisia, HTML("Ailanthus Altissima in Tunisia")
+    
 )
 
 leaflet() %>% 
+
     addProviderTiles(providers$Esri.WorldImagery) %>%
+    
     addPolygons(data= TUNISIA, fillOpacity = 0, weight = 2.5, color = '#FF1900', dashArray = "0")%>% 
+    
     addControl(title, position = "topleft", className="Ailanthus-Altissima-in-Tunisia")%>%
+    
     addCircleMarkers(radius =5, 
+    
                      stroke = FALSE, 
+                     
                      fillOpacity = 0.4,
+                     
                      lng=9.18513888888889, lat= 36.7239444)%>%
+                     
     addMarkers (data = Site1, group = "Site1", popup = paste(sep = "<br/>",
+    
                                                              "Prospecteur: Zayneb Soilhi")) %>%
+                                                             
     addPopupImages(image, group = "Site1", width = 500, maxWidth = 500) %>%
+    
     addControl(html = html_legend, position = "bottomright")
     

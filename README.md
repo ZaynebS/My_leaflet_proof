@@ -20,15 +20,25 @@ Site1 = st_as_sf(data.frame(x = 9.18513888888889, y = 36.7239444),
 html_legend <- "<img src=' https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png '>Presence "
 
 tag.Ailanthus.Altissima.in.Tunisia<- tags$style(HTML("
-  .leaflet-control.Ailanthus-Altissima-in-Tunisia{ 
+
+  .leaflet-control.Ailanthus-Altissima-in-Tunisia{
+  
     transform: translate(-50%,20%);
+    
     position: fixed !important;
+    
     left: 50%;
+    
     text-align: center;
+    
     padding-left: 10px; 
+    
     padding-right: 10px; 
+    
     background: rgba(255,255,255,0.3);
+    
     font-weight: bold;
+    
     font-size: 20px;
   }
 "))

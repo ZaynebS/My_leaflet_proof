@@ -1,10 +1,16 @@
 # My_leaflet_proof
 library(raster)
+
 library (leafpop)
+
 library(sf)
+
 library(leaflet)
+
 library(lattice)
+
 library(shiny)
+
 TUNISIA <- getData(name="GADM",  country="TUN", level=1)
 Site1 = st_as_sf(data.frame(x = 9.18513888888889, y = 36.7239444),
                  coords = c("x", "y"),
